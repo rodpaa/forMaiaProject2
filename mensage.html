@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome,safari">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>message</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100hv;
+        margin: 0;
+        padding: 0;
+        color: white;
+        text-align: center;
+    }
+    .night{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        z-index: -1;
+    }
+    .title{
+        font-family: "San Francisco", Helvetica, Arial, sans-serif;
+        font-size: .8rem;
+        margin-right: 62%;
+        margin-left: auto;
+        margin-bottom: 1.5rem;
+    }
+    .message{
+        font-family: "San Francisco", Helvetica, Arial, sans-serif;
+        font-size: .5rem;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    button {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: #85b1fe;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+        border-radius: 50px;
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 50px;
+    }
+    button:hover {
+        background-color: #5478bb;
+        transform: scale(1.1);
+    }
+    .hidden {
+        display: none;
+        }
+  </style>
+    </head>
+    <body class="not-loaded">
+    <div class="night"></div>
+    <h1 class="title">Para maia:</h1>
+    <h2 class="message">Holaa. Quiero empezar diciéndote que este regalo lo estaba preparando para ti con mucho cariño, pero bueno... ya no tuve chance de dártelo como quería. Créeme que en estos últimos días le he dado muchas vueltas a lo que me dijiste el viernes en el Town, y agradezco que hayas sido sincera conmigo.</h2>
+    <h2 class="message">No te voy a mentir, en ese momento no supe qué decir, porque la verdad no me lo esperaba. Cuando me pediste que nos viéramos, mi idea era hablar las cosas y arreglarlas, no terminarlas... pero bueno, lo hecho, hecho está.</h2>
+    <h2 class="message">Con el tiempo me di cuenta de que algo no iba bien en la relación. Yo también sentí cómo nos íbamos distanciando poco a poco. Pensé que era por nuestros horarios que ya no coincidían y que nos faltaba tiempo de calidad juntos. También creo que nos hizo falta comunicarnos mejor los dos, pero bueno... ya pasó.</h2>
+    <h2 class="title"></h2>
+    <h2 class="message">Quiero quedarme con los recuerdos bonitos que compartimos. De corazón, gracias por todo lo que vivimos. En serio, siempre vas a tener un lugar especial en mi corazón. Respeto la decisión que tomamos, aunque no voy a negar que me gustaría seguir en contacto contigo. No quiero que esto nos aleje del todo.</h2>
+    <h2 class="message">Sé que no será fácil empezar una amistad de la nada, especialmente después de haber sido novios y porque yo, honestamente, todavía te veo con ojos de amor. Pero también sé que con el tiempo eso puede cambiar, y espero que podamos encontrar la manera de volver a conectar, aunque ahorita no tenga claro cómo hacerlo. <br>Lo único que quiero que sepas es que, incluso si la vida nos lleva por caminos separados y no volvemos a hablar, siempre voy a valorar y amar cada momento que compartimos. Fuiste tú quien me iluminó durante esta etapa, y por eso siempre estaré agradecido. Te deseo lo mejor en todo lo que venga para ti.<br><br>GRACIAS ♥</h2>
+    <h1 class="title"></h1>
+    <button onclick="zflowers()">→</button>
+    <script>
+        function zflowers() {
+            document.querySelector("button").classList.add("hidden");
+            window.location.href = "zflowers.html"
+        }
+    </script>
+    </body>
