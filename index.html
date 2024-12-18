@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome,safari">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>start</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #333;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                padding: 0;
+                color: white;
+                text-align: center;
+                position: relative;
+            }
+            .night {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 200%;
+                height: 200%;
+                z-index: -1;
+            }
+            .title {
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                margin-top: 3rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+            .message {
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+            button {
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                font-size: 1rem;
+                padding: 10px 20px;
+                background-color: #85b1fe;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: transform 0.2s, background-color 0.2s;
+                border-radius: 50px;
+                display: block;
+                margin: 0 auto;
+                width: 150px;
+                height: 50px;
+            }
+            button:hover {
+                background-color: #5478bb;
+                transform: scale(1.1);
+            }
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="night"></div>
+        <h1 class="title">hola maia, se que no hemos hablado ultimamente, maybe no quieres verme por cosa de ver como me siento.</h1>
+        <p class="message">pero porfa, tomate un tiempo para leer esto, y si tienes chance responderlo:</p>
+        <button onclick="goToPage1()">open</button>
+        <script>
+            function goToPage1() {
+                document.querySelector("h1").classList.add("hidden");
+                document.querySelector(".message").classList.add("hidden");
+                document.querySelector("button").classList.add("hidden");
+                window.location.href = "mensage.html";
+            }
+        </script>
+    </body>
+</html>
